@@ -18,11 +18,19 @@
         .largest_font:hover {color: white; background-color: #333; opacity: 80%;}
         .navbar {overflow: hidden; background-color: #333; position: fixed; top: 0; width: 100%;}
 
+        .navbar {
+			  overflow: hidden;
+			  background-color: #333;
+			  position: fixed; /* Set the navbar to fixed position */
+			  top: 0; /* Position the navbar at the top of the page */
+			  width: 100%; /* Full width */
+			}
+
         .navbar a {
-        float: none;
+        float: left;
         display: block;
         color: #f2f2f2;
-        text-align:center;
+        text-align:left;
         padding: 14px 16px;
         text-decoration: none;
         }
@@ -42,15 +50,16 @@
 
     <div class="navbar">
         <a  href="#home">首頁 </a>
-        <a href="#content">台中國家歌劇院</a>
-        <a href="#content">臺中州廳</a>
-        <a href="#content">審計新村</a>
+        <a href="#content1">台中國家歌劇院</a>
+        <a href="#content2">臺中州廳</a>
+        <a href="#content3">審計新村</a>
     </div>
     
     <br>
     
-    <div class="TABLE">
+    <div id ="home" class="TABLE">
         <TABLE BORDER="0">
+
             <tr>
                 <td colspan="2">
                     <p class="largest_font">
@@ -63,6 +72,15 @@
                 </td>
             </tr>
     
+            <tr>
+                <td colspan="2">
+                    <p>
+                        <iframe frameborder="0" src="slideshow.html" width="1024" height="360" ></iframe>
+                    </p>	
+                    
+                </td>
+            </tr>
+
             <tr>
                 <td colspan="2">
                     <p class="larger_font">
@@ -81,7 +99,7 @@
 
             <tr>
                 <td>                    
-                    <IMG SRC="01.jpeg" class="r_img">
+                    <IMG id="content1" SRC="01.jpeg" class="r_img">
                 </td>
                 <td>
                     <p class="larger_font">
@@ -125,13 +143,13 @@
 
                 </td>
                 <td>                    
-                    <IMG SRC="02.jpeg" class="r_img">
+                    <IMG id="content2" SRC="02.jpeg" class="r_img">
                 </td>
             </tr>
             
             <tr>
                 <td>                    
-                    <IMG SRC="03.jpeg" class="r_img">
+                    <IMG id="content3" SRC="03.jpeg" class="r_img">
                 </td>
                 <td>
                     <p class="larger_font">
@@ -154,13 +172,22 @@
 
                 </td>
             </tr>
-        </TABLE>
     </div>
+    <tr><td colspan="2">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1I6em1PJBzm30ehB-lv8cxx4gqQtwuzI&ehbc=2E312F" width="1024" height="640"></iframe>
+    </td>
+</tr>
+<tr>
+    <td colspan="2">
     <div class="imformation">
         <p>
-            聯絡資訊：
-        </p>
-    </div>
+            聯絡資訊：09082XXXXX
+            網頁設計:吳邱翰
+            </p>
+        </td>
+    </tr>
+    </TABLE>
+</div>
 </body>
 </html>
 
